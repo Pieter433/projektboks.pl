@@ -1,36 +1,358 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projekt Boks</title>
-    <link rel="icon" href="logo.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="page">
-      <div class="glow glow-a"></div>
-      <div class="glow glow-b"></div>
-      <div class="grid"></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <title>Treningi boksu Ożarów Mazowiecki | Projekt Boks</title>
+  <meta name="description" content="Projekt Boks to treningi boksu w Ożarowie Mazowieckim dla dzieci, młodzieży i dorosłych. Zajęcia grupowe, indywidualne, technika, kondycja i sparingi." />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Projekt Boks" />
+  <meta name="geo.region" content="PL-14" />
+  <meta name="geo.placename" content="Ożarów Mazowiecki" />
+  <meta name="theme-color" content="#b63222" />
+  <link rel="canonical" href="https://projektboks.pl/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["ExerciseGym", "SportsActivityLocation"],
+    "name": "Projekt Boks",
+    "url": "https://projektboks.pl/",
+    "telephone": "+48781191027",
+    "email": "kontakt@projektboks.pl",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ożarów Mazowiecki",
+      "addressRegion": "mazowieckie",
+      "addressCountry": "PL"
+    },
+    "areaServed": ["Ożarów Mazowiecki", "Warszawa Zachodnia", "okolice Ożarowa Mazowieckiego"],
+    "sport": "Boxing",
+    "priceRange": "45-200 PLN",
+    "sameAs": [
+      "https://www.instagram.com/projekt.boks/",
+      "https://www.facebook.com/people/Projekt-Boks/61593900690120/"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Treningi boksu grupowe",
+        "url": "https://projektboks.pl/treningi/"
+      },
+      {
+        "@type": "Offer",
+        "name": "Treningi boksu indywidualne",
+        "url": "https://projektboks.pl/treningi/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-noise"></div>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Strona główna">
+      <img src="img/logo.png" alt="Projekt Boks logo" class="logo" width="64" height="64" />
+      <div class="brand-text">
+        <span class="brand-name">Projekt Boks</span>
+      </div>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Otwórz menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="nav">
+      <a href="./">Strona główna</a>
+      <a href="treningi/">Treningi</a>
+      <a href="cennik/">Cennik</a>
+      <a href="kontakt/">Kontakt</a>
+      <a href="dokumenty/">Dokumenty</a>
+    </nav>
+    <div class="header-cta">
+      <div class="header-social" aria-label="Social media">
+        <a class="header-social-link" href="https://www.instagram.com/projekt.boks/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Projekt Boks">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a class="header-social-link" href="https://www.facebook.com/people/Projekt-Boks/61593900690120/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Projekt Boks">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a class="header-social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok Projekt Boks">
+          <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+        </a>
+      </div>
+      <a class="btn btn-primary" href="kontakt/">Zapisz się</a>
+    </div>
+  </header>
 
-      <section class="card">
-        <img class="logo" src="logo.png" alt="Logo projektu" />
-        <p class="eyebrow">Projekt BOKS</p>
-        <h1>Strona jest w trakcie budowy</h1>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Nie uczę boksu na pamięć. Uczę go rozumieć.</h1>
         <p class="lead">
-          Strona jest w trakcie budowania. Wkrótce będziemy.
+          Nie musisz być zawodnikiem. Nie musisz być w formie. Nie musisz nawet wiedzieć, od czego zacząć.
+          Przychodzisz z tym, co masz.
         </p>
-        <div class="status">
-          <span class="dot" aria-hidden="true"></span>
-          <span>Widzimy się wkrótce</span>
+        <p class="lead">
+          Na treningu pracujemy nad tym, czego naprawdę potrzebujesz: techniką, poruszaniem się, kondycją,
+          reakcją i pewnością siebie. Bez przypadkowego machania rękami i bez robienia treningu tylko po to,
+          żeby się zmęczyć.
+        </p>
+        <p class="lead">
+          Chodzi o to, żeby po każdym treningu umieć trochę więcej niż przed nim.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="treningi/">ZOBACZ TRENINGI</a>
+          <a class="btn btn-outline btn-phone" href="#trener">POZNAJ MNIE</a>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+      <div class="hero-card">
+        <div class="card-body">
+          <p class="card-text">Poznaj Projekt Boks:</p>
+          <ul class="card-list">
+            <li><a href="#o-projekcie">O projekcie</a></li>
+            <li><a href="#dla-kogo">Dla kogo?</a></li>
+            <li><a href="#czego-sie-spodziewac">Czego się spodziewać?</a></li>
+            <li><a href="#moje-podejscie">Moje podejście</a></li>
+            <li><a href="#trener">Trener</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="o-projekcie">
+      <div class="section-heading">
+        <h2>O projekcie</h2>
+      </div>
+      <div class="about-story">
+        <h3>Boks to więcej niż ciosy.</h3>
+        <p>Projekt Boks powstał z prostego powodu.</p>
+        <p>Lubię boks i lubię pracować z ludźmi.</p>
+        <p>Największą satysfakcję daje mi nie samo prowadzenie treningu, ale moment, w którym ktoś zaczyna coś rozumieć.</p>
+        <p>Nagle lepiej pracuje na nogach. Zaczyna widzieć, co robi przeciwnik. Przestaje bać się sparingu. Zaczyna kontrolować swoje ruchy.</p>
+        <p>I właśnie wtedy trening zaczyna mieć sens.</p>
+        <p>Nie interesuje mnie prowadzenie ludzi według jednego schematu.</p>
+        <p>Każdy ma inne możliwości, inne doświadczenie i inne tempo nauki. Dlatego najpierw obserwuję, później poprawiam, tłumaczę i dopiero dokładam kolejne elementy.</p>
+        <p>Nie chodzi też o to, żeby zrobić z każdego zawodnika.</p>
+        <p>Chodzi o to, żeby każdy, kto przychodzi na trening, realnie zrobił krok do przodu.</p>
+      </div>
+    </section>
+
+    <section class="audience" id="dla-kogo">
+      <div class="audience-card">
+        <div class="audience-intro">
+          <span>Dla kogo?</span>
+          <h2>Nie musisz wiedzieć, czy boks jest dla Ciebie.</h2>
+          <p>Możesz po prostu przyjść i sprawdzić.</p>
+        </div>
+        <div class="audience-list" aria-label="Dla kogo są treningi">
+          <article>
+            <h3>Zaczynasz od zera</h3>
+            <p>Nie będziesz musiał udawać, że coś potrafisz. Zaczniemy od podstaw i spokojnie będziemy dokładać kolejne elementy.</p>
+          </article>
+          <article>
+            <h3>Już trenujesz</h3>
+            <p>Możemy skupić się na technice, poprawieniu błędów i tym, czego brakuje Ci w dalszym rozwoju.</p>
+          </article>
+          <article>
+            <h3>Chcesz poprawić formę</h3>
+            <p>Boks daje bardzo dużo możliwości pracy nad kondycją, koordynacją, szybkością i wytrzymałością.</p>
+          </article>
+          <article>
+            <h3>Jeśli chcesz zacząć sparować</h3>
+            <p>Najpierw przygotujemy Cię do tego technicznie i mentalnie.</p>
+          </article>
+          <article>
+            <h3>Może chcesz po prostu nauczyć się boksować</h3>
+            <p>To wystarczy. Nie każdy musi wychodzić na ring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="expectations" id="czego-sie-spodziewac">
+      <div class="expectations-card">
+        <span>Czego możesz się spodziewać?</span>
+        <h2>Przyjdź. Resztę ogarniemy na sali.</h2>
+        <div class="expectations-copy">
+          <p>Nie musisz kupować od razu całego sprzętu.</p>
+          <p>Nie musisz znać nazw wszystkich ciosów.</p>
+          <p>Nie musisz być w świetnej formie.</p>
+          <p>Nie musisz mieć doświadczenia.</p>
+          <p>Na pierwszym treningu zobaczymy, gdzie jesteś i od tego zaczniemy.</p>
+          <p>Nie będę obiecywał, że po kilku treningach będziesz bokserem.</p>
+          <p>Ale jeśli będziesz pracował, będziemy mieli z czego budować.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach" id="moje-podejscie">
+      <div class="section-heading">
+        <h2>Moje podejście</h2>
+      </div>
+      <div class="approach-card">
+        <div class="approach-intro">
+          <h3>Nie każdy potrzebuje tego samego treningu.</h3>
+          <p>Możesz przyjść po lepszą kondycję.</p>
+          <p>Możesz chcieć nauczyć się boksować.</p>
+          <p>Możesz przygotowywać się do sparingów.</p>
+          <p>Możesz trenować od lat i potrzebować kogoś, kto zobaczy błędy, których sam już nie zauważasz.</p>
+          <p>Dlatego nie zaczynam od pytania: <strong>„Ile możesz zrobić?”</strong></p>
+          <p>Zaczynam od pytania: <strong>„Co chcesz osiągnąć?”</strong></p>
+          <p>Dopiero później dobieramy sposób pracy.</p>
+        </div>
+        <div class="approach-principles" aria-label="Najważniejsze elementy podejścia treningowego">
+          <article>
+            <h4>Technika</h4>
+            <p>Najpierw poprawny ruch. Dopiero później dokładamy tempo i siłę.</p>
+          </article>
+          <article>
+            <h4>Świadomość</h4>
+            <p>Chcę, żebyś wiedział, dlaczego wykonujesz dane ćwiczenie, a nie tylko je powtarzał.</p>
+          </article>
+          <article>
+            <h4>Powtarzalność</h4>
+            <p>Boksu nie nauczysz się w jeden dzień. Dobre rzeczy powstają przez setki powtórzeń.</p>
+          </article>
+          <article>
+            <h4>Indywidualne podejście</h4>
+            <p>Nie każdy powinien boksować w taki sam sposób.</p>
+          </article>
+          <article>
+            <h4>Postęp</h4>
+            <p>Nie interesuje mnie samo zmęczenie. Interesuje mnie to, czy coś z tego treningu zostanie z Tobą na następny.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="coach" id="trener">
+      <div class="section-heading">
+        <h2>Trener</h2>
+        <p>Uważne prowadzenie, konkretny przekaz i praca nad detalem.</p>
+      </div>
+      <div class="coach-profile">
+        <figure class="coach-photo-frame">
+          <img src="img/trener.jpg" alt="Łukasz Kozakiewicz - trener boksu" class="coach-photo" loading="lazy" />
+        </figure>
+        <div class="coach-info">
+          <span class="coach-role">Trener</span>
+          <h3>Łukasz Kozakiewicz</h3>
+          <p class="coach-lead">
+            Nie chcę przedstawiać się jako trener, który zna odpowiedź na każde pytanie.
+          </p>
+          <p>Wolę być trenerem, który potrafi zauważyć, czego w danym momencie potrzebuje zawodnik.</p>
+          <p>Na treningu zwracam uwagę na szczegóły. Ustawienie nóg, balans, pracę rąk, oddech, reakcję. Na to, co robisz, kiedy ćwiczenie przestaje być łatwe.</p>
+          <p>Bo właśnie wtedy najwięcej można zobaczyć.</p>
+          <p>Lubię prosty przekaz i konkretne wskazówki. Jeśli coś można poprawić jednym zdaniem, nie będę tłumaczył tego przez piętnaście minut.</p>
+          <p>Chcę, żebyś wiedział, co robisz, po co to robisz i nad czym masz pracować dalej.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="section-heading">
+        <h2>FAQ</h2>
+        <p>Najczęstsze pytania o treningi boksu w Projekt Boks.</p>
+      </div>
+      <div class="faq-grid">
+        <article class="faq-item">
+          <h3>Czy mogę przyjść, jeśli nigdy nie trenowałem boksu?</h3>
+          <p>Tak. Trening zaczynamy od poziomu, na którym aktualnie jesteś.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Czy boks jest dla kobiet?</h3>
+          <p>Oczywiście. Technika bokserska nie zależy od płci. Dobieramy ćwiczenia do poziomu i możliwości osoby trenującej.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Czy muszę mieć własny sprzęt?</h3>
+          <p>Na początku nie musisz mieć wszystkiego. Najważniejsze jest, żebyś przyszedł i zaczął trenować.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Czy będą sparingi?</h3>
+          <p>Jeżeli będziesz na nie gotowy. Sparing powinien być kolejnym etapem nauki, a nie obowiązkowym elementem pierwszych treningów.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Czy mogę trenować tylko dla formy?</h3>
+          <p>Tak. Nie musisz planować kariery zawodniczej, żeby trenować boks.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Czy można umówić trening indywidualny?</h3>
+          <p>Tak. Trening indywidualny pozwala dokładniej skupić się na Twojej technice, błędach i konkretnym celu.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-cta-card">
+        <div class="final-cta-copy">
+          <span>Masz ochotę spróbować?</span>
+          <p>Nie musisz od razu wiedzieć, czego dokładnie potrzebujesz.</p>
+          <p>Napisz. Porozmawiamy, ustalimy, od czego zacząć i zobaczymy, czy Projekt Boks jest miejscem dla Ciebie.</p>
+          <a class="btn btn-primary" href="kontakt/">Napisz do mnie</a>
+        </div>
+        <div class="final-cta-brand">
+          <h2>Projekt Boks</h2>
+          <p>Boks bez zbędnego gadania. Praca. Technika. Postęp.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <img src="img/logo.png" alt="Projekt Boks logo" class="footer-logo" width="56" height="56" />
+        <div class="footer-meta">
+          <span class="footer-brand">Projekt Boks</span>
+          <span>Treningi boksu w Ożarowie Mazowieckim.</span>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <span class="footer-title">Menu</span>
+          <a class="footer-link" href="./">Strona główna</a>
+          <a class="footer-link" href="treningi/">Treningi</a>
+          <a class="footer-link" href="cennik/">Cennik</a>
+          <a class="footer-link" href="kontakt/">Kontakt</a>
+        </div>
+        <div class="footer-column">
+          <span class="footer-title">Dokumenty</span>
+          <a class="footer-link" href="dokumenty/">Zgoda rodzica</a>
+        </div>
+        <div class="footer-column footer-contact">
+          <span class="footer-title">Kontakt</span>
+          <a class="footer-link" href="tel:+48512098805">512 098 805</a>
+          <a class="footer-link" href="mailto:kontakt@projektboks.pl">kontakt@projektboks.pl</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Projekt Boks. Wszelkie prawa zastrzeżone.</span>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var toggle = document.querySelector(".nav-toggle");
+      var nav = document.getElementById("site-nav");
+      if (!toggle || !nav) return;
+      toggle.addEventListener("click", function () {
+        var isOpen = nav.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          nav.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
+</body>
 </html>
